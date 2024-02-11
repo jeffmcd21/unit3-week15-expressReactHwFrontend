@@ -1,6 +1,7 @@
 # Cheese App
 
-- **Jeff McDonald** (2024-02-10)
+**Jeff McDonald** (2024-02-10)
+-----------------------------
 
 #### Built with an Express backend and deployed to Render.com:
 [Render - (backend site)](https://express-react-cheese.onrender.com)
@@ -30,7 +31,7 @@
 - react-router-dom
 - sass
 
-## Route Map
+### Route Map
 
 | Route Name | Endpoint | Method | Decsription |
 |------------|----------|--------|-------------|
