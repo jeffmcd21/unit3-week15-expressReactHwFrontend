@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Cheese App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Jeff McDonald** (2024-02-10)
 
-## Available Scripts
+#### Built with an Express backend and deployed to Render.com:
+[Render - (backend site)](https://express-react-cheese.onrender.com)
 
-In the project directory, you can run:
+[GitHub backend repository](https://github.com/jeffmcd21/unit3-week15-expressReactHW)
 
-### `npm start`
+#### Built with a React frontend and deployed to Netlify.com:
+[Netlify - (main site)](https://cheesetracker.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[GitHub frontend repository](https://github.com/jeffmcd21/unit3-week15-expressReactHwFrontend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+--------------
 
-### `npm test`
+### List of Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Node Dependencies
 
-### `npm run build`
+- cors
+- dotenv
+- express
+- mongoose
+- morgan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- react
+- react-router-dom
+- sass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Route Map
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Route Name | Endpoint | Method | Decsription |
+|------------|----------|--------|-------------|
+| Index | /cheese | GET | Renders entire list of cheese |
+| New | /cheese/new | GET | Display a form to add a new cheese |
+| Delete | /cheese/:id | DELETE | Remove a particular cheese then redirect |
+| Update | /cheese/:id | PUT | Update a particular cheese then redirect |
+| Create | /cheese | GET | Add a new cheese to the database then redirect |
+| Edit | /cheese/:id/edit | POST | Show edit form for a cheese |
+| Show | /cheese/:id | GET | Show info about a cheese |
